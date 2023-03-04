@@ -1,23 +1,39 @@
-// VARIABLE 
-$font-one:'Helvetica Neue',
+// VARIABLE
+$font-one: "Helvetica Neue",
 Helvetica,
 Arial,
 sans-serif;
-$blue : #0000FF;
-$lightYellow:#7f9b19;
-$fontSamll : 2em;
+$blue: rgba(0, 50, 255, 0.7);
+// raga  a is opacity
+$lightYellow: #7f9b19;
+$fontSamll: 2em;
+$sat: 20;
+// STRING
+$string: " Word's";
+// NUMBER
+$number: 1em * 2;
+// BOOLEAN
+$bol: false;
+// LIST
+$list: one,
+two,
+three;
 
-// END 
+// END
 body {
     background: #dfdada;
     height: 100vh;
 
     h1 {
+        &::after {
+            content: $string;
+        }
+
         color: $blue;
 
         font: {
             family: $font-one;
-            size: $fontSamll;
+            size: $number;
             // weight: normal;
             weight: bold;
         }
