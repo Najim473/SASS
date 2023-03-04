@@ -1,0 +1,21 @@
+body {
+  background: #dfdada;
+}
+body h1 {
+  color: blue;
+  font-family: helvetica;
+  font-size: 2em;
+  font-weight: bold;
+}
+body section h2 {
+  color: yellowgreen;
+}
+body section p {
+  color: green;
+}
+body aside {
+  background: #d6cc89;
+}
+body aside p {
+  color: coral;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+body {
+    background: #dfdada;
+
+    h1 {
+        color: blue;
+
+        font: {
+            family: helvetica;
+            size: 2em;
+            weight: bold;
+        }
+    }
+
+    section {
+        h2 {
+            color: yellowgreen
+        }
+
+        p {
+            color: green;
+        }
+    }
+
+    aside {
+        background: #d6cc89;
+
+        p {
+            color: coral;
+        }
+    }
+}
