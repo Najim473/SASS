@@ -3,8 +3,7 @@ body {
   height: 100vh;
 }
 body h1 {
-  color: hsl(240, 50%, 50%);
-  width: 300px;
+  color: #000066;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -20,7 +19,7 @@ section article p {
   color: #fff;
 }
 section article.article-1 {
-  background: hsla(38.8235294118, 50%, 50%, 0.5);
+  background: #d8d88c;
 }
 section article.article-2 a {
   color: black;
