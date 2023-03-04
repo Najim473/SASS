@@ -3,7 +3,7 @@ body {
   height: 100vh;
 }
 body h1 {
-  color: #000066;
+  color: #0b0b42;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: bold;
@@ -22,13 +22,13 @@ section article.article-1 {
   background: #d8d88c;
 }
 section article.article-1 h2 {
-  color: #000066;
+  color: #0b0b42;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: bold;
 }
 section article.article-2 h2 {
-  color: #000066;
+  color: #0b0b42;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: bold;
