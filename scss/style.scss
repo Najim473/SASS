@@ -3,15 +3,28 @@ $font-one: "Helvetica Neue",
 Helvetica,
 Arial,
 sans-serif;
-$blue: rgba(0, 50, 255, 0.7);
-// raga  a is opacity
-$lightYellow: #7f9b19;
-$fontSamll: 2em;
-// $sat: 20px;
-//  we can use round,ceil,floor also percentage
-$sat: ceil(124px/3);
-// STRING
-$string: " Number Operations";
+$blue: blue;
+$lightYellow: rgb(189, 189, 65);
+$orange: orange;
+
+//  FUNCTION
+@function my1Funcion($color) {
+    // @return $color;
+    // SATURATION
+    @return hsla(hue($color), 50, lightness($color), 1);
+}
+
+@function my2Funcion($color, $alpha) {
+    // @return $color;
+    // SATURATION
+    @return hsla(hue($color), 50, lightness($color), $alpha);
+}
+
+@function multiple($a, $b) {
+    @return $a * $b;
+}
+
+$width: 20px;
 
 // END
 body {
@@ -19,15 +32,13 @@ body {
     height: 100vh;
 
     h1 {
-        &::after {
-            content: $string;
-        }
-
-        color: $blue;
+        color: my1Funcion($blue);
+        width: multiple($width, 15);
+        // background: $blue;
 
         font: {
             family: $font-one;
-            size: $sat;
+            size: 30px;
             // weight: normal;
             weight: bold;
         }
@@ -47,7 +58,7 @@ section {
         }
 
         &.article-1 {
-            background: #5fb43e;
+            background: my2Funcion($orange, 0.5);
         }
 
         &.article-2 {

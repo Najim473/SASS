@@ -3,17 +3,15 @@ body {
   height: 100vh;
 }
 body h1 {
-  color: rgba(0, 50, 255, 0.7);
+  color: hsl(240, 50%, 50%);
+  width: 300px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 42px;
+  font-size: 30px;
   font-weight: bold;
-}
-body h1::after {
-  content: " Number Operations";
 }
 
 section article {
-  background: #7f9b19;
+  background: rgb(189, 189, 65);
 }
 section article h2 {
   color: #fff;
@@ -22,7 +20,7 @@ section article p {
   color: #fff;
 }
 section article.article-1 {
-  background: #5fb43e;
+  background: hsla(38.8235294118, 50%, 50%, 0.5);
 }
 section article.article-2 a {
   color: black;
