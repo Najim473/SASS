@@ -7,17 +7,11 @@ $blue: rgba(0, 50, 255, 0.7);
 // raga  a is opacity
 $lightYellow: #7f9b19;
 $fontSamll: 2em;
-$sat: 20;
+// $sat: 20px;
+//  we can use round,ceil,floor also percentage
+$sat: ceil(124px/3);
 // STRING
-$string: " Word's";
-// NUMBER
-$number: 1em * 2;
-// BOOLEAN
-$bol: false;
-// LIST
-$list: one,
-two,
-three;
+$string: " Number Operations";
 
 // END
 body {
@@ -33,7 +27,7 @@ body {
 
         font: {
             family: $font-one;
-            size: $number;
+            size: $sat;
             // weight: normal;
             weight: bold;
         }
