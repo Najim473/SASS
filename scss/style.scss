@@ -7,13 +7,14 @@ body {
         font: {
             family: helvetica;
             size: 2em;
-            weight: bold;
+            weight: normal;
+            // weight: bold;
         }
     }
 
     section {
         h2 {
-            color: yellowgreen
+            color: yellowgreen;
         }
 
         p {
