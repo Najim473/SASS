@@ -3,14 +3,14 @@ body {
   height: 100vh;
 }
 body h1 {
-  color: blue;
-  font-family: helvetica;
+  color: #0000FF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2em;
   font-weight: bold;
 }
 
 section article {
-  background: #a8d627;
+  background: #aaca38;
 }
 section article h2 {
   color: #fff;

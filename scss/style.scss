@@ -1,12 +1,21 @@
+// VARIABLE 
+$font-one:'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+$blue : #0000FF;
+$lightYellow:#aaca38;
+
+// END 
 body {
     background: #dfdada;
     height: 100vh;
 
     h1 {
-        color: blue;
+        color: $blue;
 
         font: {
-            family: helvetica;
+            family: $font-one;
             size: 2em;
             // weight: normal;
             weight: bold;
@@ -16,7 +25,7 @@ body {
 
 section {
     article {
-        background: #a8d627;
+        background: $lightYellow;
 
         h2 {
             color: #fff;
