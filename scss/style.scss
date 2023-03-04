@@ -5,6 +5,7 @@ Arial,
 sans-serif;
 $blue : #0000FF;
 $lightYellow:#7f9b19;
+$fontSamll : 2em;
 
 // END 
 body {
@@ -16,7 +17,6 @@ body {
 
         font: {
             family: $font-one;
-            size: 2em;
             // weight: normal;
             weight: bold;
         }
