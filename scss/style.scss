@@ -4,30 +4,43 @@ body {
     h1 {
         color: blue;
 
-        // NESTING PROPERTIES 
         font: {
             family: helvetica;
             size: 2em;
-            weight: normal;
-            // weight: bold;
+            // weight: normal;
+            weight: bold;
         }
     }
+}
 
-    section {
+section {
+    article {
+        background: #a8d627;
+
         h2 {
-            color: yellowgreen;
+            color: #fff;
         }
 
         p {
-            color: green;
+            color: #fff;
         }
-    }
 
-    aside {
-        background: #d6cc89;
+        &.article-1 {
+            background: #5fb43e;
+        }
 
-        p {
-            color: coral;
+        &.article-2 {
+            a {
+                color: black;
+
+                &:hover {
+                    color: #ffff;
+                }
+            }
+        }
+
+        body:hover &.article-3 {
+            background: #000;
         }
     }
 }
