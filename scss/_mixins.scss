@@ -1,0 +1,19 @@
+// USING _ BEFORE FILE LIKE _mixins.scss that not create another file like mixins.css & mixins.css.map
+@mixin heading-font($font-size:3em) {
+    color: darken($blue, 30%);
+
+    // background: $blue;
+    font: {
+        family: $font-one;
+        size: $font-size;
+        // weight: normal;
+        weight: bold;
+    }
+}
+
+@mixin corners {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}

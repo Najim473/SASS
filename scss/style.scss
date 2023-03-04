@@ -1,36 +1,6 @@
-// VARIABLE
-$font-one: "Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif;
-$blue: blue;
-$lightYellow: rgb(189, 189, 65);
-$orange: orange;
-// MIXIN
-// @mixin heading-font() {
-//     color: darken($blue, 30%);
-//     font: {
-//         family: $font-one;
-//         size: 30px;
-//         weight: bold;
-//     }
-// }
+@import "mixins.scss";
+@import "variables.scss";
 
-// WE CAN ALSO USE VARIABLE 
-// @mixin heading-font($font-size) { /* we can also do this this way
-@mixin heading-font($font-size:3em) {
-    color: darken($blue, 30%);
-
-    // background: $blue;
-    font: {
-        family: $font-one;
-        size: $font-size;
-        // weight: normal;
-        weight: bold;
-    }
-}
-
-// END
 body {
     background: #dfdada;
     height: 100vh;
