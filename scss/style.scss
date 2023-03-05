@@ -1,7 +1,19 @@
-@import "compass";
-@import "compass/layout";
 @import "mixins.scss";
 @import "variables.scss";
+
+// WE CAN ALSO USE THIS AS EXTEND VARIABLE
+%corners {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    // USING nth 
+    //  -webkit-border: 3px solid nth($colors, 3);
+    //  -moz-border: 3px solid nth($colors, 3);
+    //  border: 3px solid nth($colors, 3);
+    -webkit-border: 3px solid map-get($colors, yellow);
+    -moz-border: 3px solid map-get($colors, yellow);
+    border: 3px solid map-get($colors, yellow);
+}
 
 body {
     background: #dfdada;
@@ -18,15 +30,15 @@ section {
             family: $font-one;
         }
 
-        background: darken($white, 8%);
-        color: $blue;
-        @include border-corner-radius(top, left, 80px);
+        background: darken(map-get($colors, orange), 8%);
+        color: nth($colors, 1);
+        @extend %corners;
         padding: 5px 10px;
         margin: 10px;
     }
 
     article {
-        background: $lightYellow;
+        background: map-get($colors, orange);
         margin-bottom: 30px;
 
         h2 {
@@ -38,7 +50,7 @@ section {
         }
 
         &.article-1 {
-            background: lighten($lightYellow, 20%);
+            background: (map-get($colors, white), 20%);
 
             h2 {
                 @include heading-font(1em);
@@ -47,7 +59,7 @@ section {
             a {
                 // WE CAN ALSO CUSTOMIZED LINK VARIABLES
                 @extend .link;
-                color: $black;
+                color: map-get($colors, yellow);
             }
         }
 

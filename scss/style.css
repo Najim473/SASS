@@ -1,9 +1,16 @@
+section .link, section article.article-1 a {
+  border-radius: 10px;
+  -webkit-border: 3px solid #ffff00;
+  -moz-border: 3px solid #ffff00;
+  border: 3px solid #ffff00;
+}
+
 body {
   background: #dfdada;
   height: 100vh;
 }
 body h1 {
-  color: #0b0b42;
+  color: #000066;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: bold;
@@ -11,13 +18,13 @@ body h1 {
 
 section .link, section article.article-1 a {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #ebebeb;
-  color: rgb(32, 32, 198);
+  background: #d68b00;
+  color: blue #0000ff;
   padding: 5px 10px;
   margin: 10px;
 }
 section article {
-  background: rgb(189, 189, 65);
+  background: #ffa500;
   margin-bottom: 30px;
 }
 section article h2 {
@@ -27,19 +34,19 @@ section article p {
   color: #fff;
 }
 section article.article-1 {
-  background: #d8d88c;
+  background: #ffffff, 20%;
 }
 section article.article-1 h2 {
-  color: #0b0b42;
+  color: #000066;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: bold;
 }
 section article.article-1 a {
-  color: #000;
+  color: #ffff00;
 }
 section article.article-2 h2 {
-  color: #0b0b42;
+  color: #000066;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: bold;

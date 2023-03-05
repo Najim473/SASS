@@ -1,6 +1,6 @@
 // USING _ BEFORE FILE LIKE _mixins.scss that not create another file like mixins.css & mixins.css.map
 @mixin heading-font($font-size:3em) {
-    color: darken($blue, 30%);
+    color: darken(map-get($colors, blue), 30%);
 
     // background: $blue;
     font: {

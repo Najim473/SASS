@@ -3,9 +3,24 @@ $font-one: "Helvetica Neue",
 Helvetica,
 Arial,
 sans-serif;
-$blue: rgb(32, 32, 198);
-$lightYellow: rgb(189, 189, 65);
-$orange: orange;
-$yellow:yellow;
-$white:#ffffff;
-$black:#000;
+// WYA ONE
+// $colors:#0000FF #FFFF00 #FFA500 #ffffff;
+// WAY TWO
+$colors: (blue: #0000ff,
+    yellow: #ffff00,
+    orange: #ffa500,
+    white: #ffffff,
+);
+//
+// $blue: rgb(32, 32, 198);
+// $lightYellow: rgb(189, 189, 65);
+// $orange: orange;
+// $yellow:yellow;
+// $white:#ffffff;
+// $black:#000;
+// WYA ONE
+// $contrasted-light-default: nth($colors, 2);
+// WAY TWO
+$contrasted-light-default: map-get($colors, blue);
+//
+$contrasted-dark-default: #222;
