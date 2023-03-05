@@ -1,16 +1,7 @@
+@import "compass";
+@import "compass/layout";
 @import "mixins.scss";
 @import "variables.scss";
-
-// WE CAN ALSO USE THIS AS EXTEND VARIABLE
-%corners {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border: 3px solid $black;
-    -moz-border: 3px solid $black;
-    border: 3px solid $black;
-
-}
 
 body {
     background: #dfdada;
@@ -29,7 +20,7 @@ section {
 
         background: darken($white, 8%);
         color: $blue;
-        @extend %corners;
+        @include border-corner-radius(top, left, 80px);
         padding: 5px 10px;
         margin: 10px;
     }
@@ -54,7 +45,7 @@ section {
             }
 
             a {
-                // WE CAN ALSO CUSTOMIZED LINK VARIABLES 
+                // WE CAN ALSO CUSTOMIZED LINK VARIABLES
                 @extend .link;
                 color: $black;
             }
